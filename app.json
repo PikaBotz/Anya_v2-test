@@ -28,15 +28,15 @@
       "required": false
     },
   },
-  "buildpacks": [
+"buildpacks": [
     {
       "url": "heroku/nodejs"
     },
     {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ]
 }
