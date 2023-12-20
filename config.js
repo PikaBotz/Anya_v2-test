@@ -74,17 +74,18 @@ module.exports = {
   ownernumber: process.env.Owner_Number || "916900904828",
   instagramId: process.env.Insta || "8.08_only_mine",
   warns: process.env.Warns_Limits || 3,
-  mongoUrl: process.env.MongoDB || "YOUR_MONGODB_URL",
+  mongoUrl: process.env.MongoDB || "mongodb+srv://harshjain2901:5i9zbY8t2aT1BArv@cluster0.u21ypbo.mongodb.net/?retryWrites=true&w=majority",
   welcome: process.env.Welcome_Msg || '*@$user* joined this group today as $membersth member.\n\n_$prefix welcome off to disable this message._',
   left: process.env.Left_Msg || 'Ex-member *@$user* is no longer available in this group chat.\n\n_$prefix goodbye off to disable this message._',
   promote: process.env.Promote_Msg || '*@$user* has been promoted as an admin in this group.\n\n_$prefix promotem off to disable this message._',
   demote: process.env.Demote_Msg || '*@$user* has been demoted to a member in this group.\n\n_$prefix demotem off to disable this message._',
-  sessionId: process.env.SESSION_ID || "YOUR_SESSION_ID", 
+  sessionId: process.env.SESSION_ID || "MzYzVjJ_Queen-Anya_GeVU=", 
   image_1: readFileSync('./lib/Assets/image_1.jpg'), // Thumbnail for allmenu command
   image_2: readFileSync('./lib/Assets/image_2.jpg'), // null image
   image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
   aliveMedia: readFileSync("./lib/Assets/aliveMedia.mp4"),
   menuMedia: readFileSync('./lib/Assets/menuMedia.mp4'),
+  ownercon: { key: { participant: '0@s.whatsapp.net', ...({ remoteJid: 'status@broadcast' }), }, message: { contactMessage: { displayName: this.ownername, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${this.ownername},;;;\nFN:${this.ownername}\nitem1.TEL;waid=${this.ownernumber}:${this.ownernumber}\nitem1.X-ABLabel:Mobile\nEND:VCARD`, jpegThumbnail: this.image_2, thumbnail: this.image_2, sendEphemeral: true } } }, 
   badWords: badWords,
   message: {
     success: message.success,
@@ -102,7 +103,7 @@ module.exports = {
   },
 }
 
-
+/*
 
 // Ignore them 👇🏻
 global.botname = process.env.BotName || "Queen Anya" 
@@ -132,3 +133,4 @@ global.image_2 = readFileSync('./lib/Assets/image_2.jpg') // null image
 global.image_3 = readFileSync("./lib/Assets/image_3.jpg") // Thumbnail for Dashboard
 global.menu_pic = "https://i.ibb.co/PhDcZTM/Thumbnail.png";
 
+*/
